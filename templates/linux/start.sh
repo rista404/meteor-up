@@ -19,9 +19,9 @@ set +e
 set -e
 docker build -t meteorhacks/meteord:app - << EOF
 FROM meteorhacks/meteord:base
-RUN add-apt-repository ppa:rwky/graphicsmagick -y
-RUN apt-get update -y
-RUN apt-get install graphicsmagick -y
+# RUN add-apt-repository ppa:rwky/graphicsmagick -y
+# RUN apt-get update -y
+# RUN apt-get install graphicsmagick -y
 EOF
 
 
