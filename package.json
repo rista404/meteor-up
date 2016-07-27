@@ -15,7 +15,7 @@
     "minimist": "1.1.1"
   },
   "bin": {
-    "muprocka": "./bin/mup"
+    "muprockanew": "./bin/mup"
   },
   "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
   "repository": {
