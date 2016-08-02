@@ -19,7 +19,7 @@ set +e
 set -e
 docker build -t ianmartorell/meteord-graphicsmagick:app - << EOF
 FROM ianmartorell/meteord-graphicsmagick:base
-RUN apt-get install graphicsmagick -y
+# RUN apt-get install graphicsmagick -y
 EOF
 
 
