@@ -1,5 +1,5 @@
 {
-  "name": "muprocka",
+  "name": "mupxgm",
   "version": "1.5.2",
   "description": "Production Quality Meteor Deployments",
   "dependencies": {
@@ -15,7 +15,7 @@
     "minimist": "1.1.1"
   },
   "bin": {
-    "muprocka": "./bin/mup"
+    "mupxgm": "./bin/mup"
   },
   "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
   "repository": {
