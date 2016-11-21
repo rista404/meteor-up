@@ -50,7 +50,7 @@ fi
 <% if(typeof sslConfig === "object")  { %>
   # We don't need to fail the deployment because of a docker hub downtime
   set +e
-  docker pull meteorhacks/mup-frontend-server:latest
+  docker build https://github.com/rista404/mup-frontend-server
   set -e
   docker run \
     -d \
@@ -60,5 +60,5 @@ fi
     --link=$APPNAME:backend \
     --publish=<%= sslConfig.port %>:443 \
     --name=$APPNAME-frontend \
-    meteorhacks/mup-frontend-server /start.sh
+    rista404/mup-frontend-server /start.sh
 <% } %>
