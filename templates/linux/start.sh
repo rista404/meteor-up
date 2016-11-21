@@ -50,7 +50,7 @@ fi
 <% if(typeof sslConfig === "object")  { %>
   # We don't need to fail the deployment because of a docker hub downtime
   set +e
-  docker build https://github.com/rista404/mup-frontend-server
+  docker build -f https://github.com/rista404/mup-frontend-server .
   set -e
   docker run \
     -d \
