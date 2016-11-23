@@ -50,7 +50,7 @@ fi
 <% if(typeof sslConfig === "object")  { %>
   # We don't need to fail the deployment because of a docker hub downtime
   set +e
-  docker build -f https://github.com/rista404/mup-frontend-server -t rista404-mup-frontend-server .
+  docker pull ristic/mup-frontend-server:latest
   set -e
   docker run \
     -d \
@@ -60,5 +60,5 @@ fi
     --link=$APPNAME:backend \
     --publish=<%= sslConfig.port %>:443 \
     --name=$APPNAME-frontend \
-    rista404-mup-frontend-server /start.sh
+    ristic/mup-frontend-server /start.sh
 <% } %>
